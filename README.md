@@ -26,11 +26,11 @@ There are approximately 30 signals in linux environment. Here are some of the mo
 
 **Signal Trapping**: A process can trap the signal received from OS and perform user defined function when signal is received.
 > #include<signal.h>
-signal(SIGINT, signal_handler);
-static void signal_handler(int sig){
-  printf("Ctrl+C pressed");
-  exit(0);
-}
+* signal(SIGINT, signal_handler);
+* static void signal_handler(int sig){
+*   printf("Ctrl+C pressed");
+*   exit(0);
+* }
 
 **raise()**: A process can send a signal to itself using raise().
 >int raise(int signo);
